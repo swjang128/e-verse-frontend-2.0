@@ -1,0 +1,69 @@
+.input-style {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding-bottom: 12px;
+  padding-left: 61px;
+  padding-right: 8px;
+  padding-top: 30px;
+  transition: border-color 0.3s;
+}
+
+/* 자동 완성 */
+.autoFill-custom:-webkit-autofill,
+.autoFill-custom:-webkit-autofill:hover,
+.autoFill-custom:-webkit-autofill:focus,
+.autoFill-custom:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.autoFill-custom:autofill,
+.autoFill-custom:autofill:hover,
+.autoFill-custom:autofill:focus,
+.autoFill-custom:autofill:active {
+  -webkit-text-fill-color: #fff;
+  box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-style::placeholder {
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.input-style:focus {
+  border-color: #00aaff; /* e_blue */
+  outline: none;
+}
+
+.label {
+  position: absolute;
+  left: 62px;
+  top: 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.icon-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  margin-top: 6px;
+}
+
+.error-message {
+  margin-top: 0.5px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.error-message-light {
+  color: #b9f0e5;
+}
+
+.error-message-orange {
+  color: #ff8311;
+}

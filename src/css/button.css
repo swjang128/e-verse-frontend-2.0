@@ -1,0 +1,32 @@
+.common-button {
+  min-width: 6rem; /* min-w-24 */
+  border-radius: 0.25rem; /* rounded */
+  border: 1px solid #007bff; /* border, border-primary */
+  background-color: transparent; /* bg-transparent */
+  padding: 0.5rem 1.125rem; /* px-4.5, py-2 */
+  text-align: center; /* text-center */
+  font-weight: 500; /* font-medium */
+  color: #007bff; /* text-primary */
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hover effects transition */
+}
+
+.common-button:hover {
+  background-color: #007bff; /* hover:bg-primary */
+  background-color: rgba(0, 123, 255, 0.9); /* hover:bg-opacity-90 */
+  color: #ffffff; /* hover:text-white */
+}
+
+.common-button.dark-mode {
+  background-color: #007bff; /* dark:bg-primary */
+  color: #ffffff; /* dark:text-white */
+}
+
+.common-button.xsm-max-w-1 {
+  max-width: 0.25rem; /* xsm:max-w-1 */
+}
+
+.common-button.md-max-w-40 {
+  max-width: 10rem; /* md:max-w-40 */
+}
